@@ -588,7 +588,7 @@ a {
 }
 
 .servicio-card {
-    min-height: 230px;
+    min-height: 100px;
 
     padding: 2rem 1.5rem;
 
@@ -614,23 +614,27 @@ a {
 }
 
 .servicio-icono {
-    width: 58px;
-    height: 58px;
 
-    margin: 0 auto 1rem;
+    margin: 0 auto 0.8rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    width: 100%; 
+    height: 175px;
+
     background-color: #fff1f1;
 
-    border-radius: 50%;
+    border-radius: 25px;
+    
+    object-fit: cover;
 }
 
 .servicio-icono img {
-    width: 35px;
-    height: 35px;
+    width: 92%; 
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; 
 
     object-fit: contain;
 }
