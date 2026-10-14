@@ -126,5 +126,9 @@ if (formulario) {
             `Detalles: ${detalles || "No especificados"}`
         ].filter(Boolean).join("\n");
 
-        
-        const urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`; window.location.href = urlWhatsApp;
+        const urlWhatsApp =
+            `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+
+        window.location.href = urlWhatsApp;
+    });
+}
