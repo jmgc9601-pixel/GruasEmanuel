@@ -127,9 +127,4 @@ if (formulario) {
         ].filter(Boolean).join("\n");
 
         
-        const urlWhatsApp =
-            `https://web.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
-
-            window.open(urlWhatsApp, "_blank", "noopener,noreferrer");
-            });
-            }
+        const urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`; window.location.href = urlWhatsApp;
