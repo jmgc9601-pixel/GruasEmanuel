@@ -1,3 +1,14 @@
+console.log("JavaScript cargado");
+
+console.log(
+    "Botón de ubicación:",
+    document.getElementById("obtener-ubicacion")
+);
+
+console.log(
+    "Formulario:",
+    document.getElementById("formulario-grua")
+);
 
 const formulario = document.getElementById("formulario-grua");
 
@@ -115,9 +126,10 @@ if (formulario) {
             `Detalles: ${detalles || "No especificados"}`
         ].filter(Boolean).join("\n");
 
+        
         const urlWhatsApp =
-            `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+            `https://web.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
 
-        window.location.href = urlWhatsApp;
-    });
-}
+            window.open(urlWhatsApp, "_blank", "noopener,noreferrer");
+            });
+            }
